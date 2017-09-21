@@ -71,3 +71,5 @@ A plus to recursion is that a recursive approach to a problem may actually be th
 
 
 [source](http://ww2.kcd.org/ACP/Ch06/BigOCurves.html)
+
+[samples](https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)

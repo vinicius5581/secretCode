@@ -22,5 +22,5 @@
 
 ## Sources
 
-- [jsdude](http://thatjsdude.com/interview/js1.html#isPrime)
+- [jsdude](http://thatjsdude.com/interview/)
 - [h5bp](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
