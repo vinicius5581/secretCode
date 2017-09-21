@@ -1,4 +1,4 @@
-# Big O Notation and The Space/Time Trade Off 
+# Big O Notation and The Space/Time Trade Off
 
 ## Running Time and Memory Usage ... aka The Space for Time TradeOff.
 
@@ -39,7 +39,7 @@ The behavior is quadratic if the number of instructions executed increases in di
 
 ---
 
-### logarithmic 
+### logarithmic
 
 The behavior is logarithmic if the number of instructions executed increases logarithmicly usually based on log2 n. An example is the binary search where the list being searched is successively divided in half. Therefore, it is O(log2 n), where the base is 2 not 3 or some other integer.
 
@@ -57,6 +57,8 @@ The behavior is exponential if the number of instructions executed increases exp
 
 ---
 
+![big O Curves](http://ww2.kcd.org/ACP/Ch06/BigOCurves.jpg)
+
 ## The Costs and Benefits of Recursion.
 
 First, lets look at memory. Remember we are talking about memory not time so its not the number of lines executed its how much stack memory is used.
@@ -66,3 +68,6 @@ In general, a recursive process that requires N recursive calls requires N + 1 u
 An equivalent iterative process always requires only one unit of stack memory and processor time to manage the function call, regardless of the number of times the loop runs. This is constant behavior regarding the memory.
 
 A plus to recursion is that a recursive approach to a problem may actually be the best way to a solution and the code may be shorter. For example, one of the fastest methods of sorting called the QuickSort uses a recursive algorithm. MergeSort also can be written recursively. Also, you will find out later that recursion can be a valuable tool when working with dynamic data structures particularly binary trees.
+
+
+[source](http://ww2.kcd.org/ACP/Ch06/BigOCurves.html)
