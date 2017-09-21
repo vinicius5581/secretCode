@@ -2,10 +2,7 @@
 console.log("longest palindromes");
 // Giving a string return true if the string is a Palindrome
 var isPalindrome = function(inputString) {
-  var splitedString = inputString.split("");
-  var reverseLetters = splitedString.reverse();
-  var reversedString = reverseLetters.join("");
-  return inputString === reversedString;
+  return inputString === inputString.split("").reverse().join("");
 }
 
 // Giving a string return an array with all possible combinations of letters.
