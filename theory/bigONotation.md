@@ -22,29 +22,39 @@ This kind of behavior is ideal. If we can access information immediately without
 middle = IntArray [(first_index + last_index) / 2 ];
 
 System.out.println("The middle index is " + middle);
-````
+```
 
 It takes one line of code to access this element. This is O(1).
----
+
+
 ### linear
 
 The behavior is linear if the number of instructions executed increases in direct proportion to the size of the problem. A sequential or linear search is an example of this. If we have n elements in an array, then in the worst case scenario the item we want to find is either in the last position or it is not in the array at all. In either case we have to check all n elements for the value from the first component to the last. In other words, n checks for n components. This is O(n).
+
 ---
+
 ### quadratic
 
 The behavior is quadratic if the number of instructions executed increases in direct proportion to the square of the size of the problem. If we are performing a insertion sort or selection sort on an unsorted array we always have a loop with a nested loop which controls the sorting process. With an array of n elements, the loops' bounds are from 0 to n-1. The outside loop runs n times but the inner loop runs n times everytime the outside loop runs once. So we have approximately n x n executions or n2. No matter what the exact number of executions for a nested loop algorithm, we always approximate and just say n-squared. This is O(n2).
+
 ---
+
 ### logarithmic 
 
 The behavior is logarithmic if the number of instructions executed increases logarithmicly usually based on log2 n. An example is the binary search where the list being searched is successively divided in half. Therefore, it is O(log2 n), where the base is 2 not 3 or some other integer.
+
 ---
+
 ### n-log-n
 
 The behavior is part logarithmic and part linear. Here one part of the algorithm behaves linearly and the other part behaves logarithmicly. Therefore, we have n * log2 n. Examples of this are MergeSort, QuickSort, and HeapSort. This is O(log2 n). A note about MergeSort and QuickSort. The part of MergeSort that is log2 n is when the recursiveSort method is successively dividing the array in half until there is only 1 or two items in each part of the subdivided array. The part of QuickSort that is log2 n is when the recursiveSort method is partitioning the array almost in half every time while it places each pivot value in its final position.
+
 ---
+
 ### exponential
 
 The behavior is exponential if the number of instructions executed increases exponentially usually based on 2n. We will only mention that the possibility of these behaviors exist with no particular algorithm in mind. This is O(2n).
+
 ---
 
 ## The Costs and Benefits of Recursion.
