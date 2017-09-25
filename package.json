@@ -1,0 +1,26 @@
+{
+  "name": "secretcode",
+  "version": "1.0.0",
+  "description": "## Code Samples",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^4.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "jshint": "^2.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius5581/secretCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicius5581/secretCode/issues"
+  },
+  "homepage": "https://github.com/vinicius5581/secretCode#readme"
+}
