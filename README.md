@@ -7,6 +7,8 @@
 - Inheritance (javascript)
 - Tooltip (html, css, js)
 
+
+
 ## Theory
 
 - [Big O Notation](theory/bigONotation.md)
@@ -25,3 +27,4 @@
 
 - [jsdude](http://thatjsdude.com/interview/)
 - [h5bp](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+- [benoitvallon](https://github.com/benoitvallon/computer-science-in-javascript/tree/master/data-structures-in-javascript)
