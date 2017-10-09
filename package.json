@@ -4,7 +4,8 @@
   "description": "## Code Samples",
   "main": "index.js",
   "dependencies": {
-    "eslint": "^4.7.2"
+    "eslint": "^4.7.2",
+    "grunt": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^4.7.2",

@@ -28,3 +28,10 @@
 - [jsdude](http://thatjsdude.com/interview/)
 - [h5bp](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 - [benoitvallon](https://github.com/benoitvallon/computer-science-in-javascript/tree/master/data-structures-in-javascript)
+
+
+## Notes
+
+- event bubbling vs event capturing
+- scope === vairable access
+- context === this
