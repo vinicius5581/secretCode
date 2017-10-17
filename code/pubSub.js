@@ -2,7 +2,7 @@ function PubSub() {
 	var hashData = {};
 
 	function publish (event, payload) {
-		hashData[event].map(callback => {
+		hashData[event].forEach(callback => {
 			callback(payload)
 		});
 	}
