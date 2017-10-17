@@ -1,45 +1,62 @@
-var Stack = function() {
-  this.count = 0;
-  this.stack = {};
-
-  this.push = function(value) {
-    this.stack[this.count] = value;
-    this.count++;
-  }
-
-  this.peek = function() {
-    return this.stack[this.count - 1];
-  }
-
-  this.pop = function() {
-    if(this.count === 0) {
-      return undefined;
-    }
-
-    this.count--;
-    var store = this.stack[this.count];
-    delete this.stack[this.count];
-    return store;
-  }
-
-  this.size = function() {
-    return this.count;
-  }
-
+function debounce() {
+  clearTimeout();
+  return setTimeout(function(){
+    console.log('oi');
+  }, 2000);
 }
 
-var myStack = new Stack();
+debounce();
+console.log(1);
+debounce();
+console.log(2);
+debounce();
+console.log(3);
 
-myStack.push(1);
-myStack.push(2);
-console.log(myStack.peek());
-console.log(myStack.pop());
-console.log(myStack.peek());
-myStack.push("Vinicius");
-console.log(myStack.size());
-console.log(myStack.peek());
-console.log(myStack.pop());
-console.log(myStack.peek());
+
+
+
+// var Stack = function() {
+//   this.count = 0;
+//   this.stack = {};
+//
+//   this.push = function(value) {
+//     this.stack[this.count] = value;
+//     this.count++;
+//   }
+//
+//   this.peek = function() {
+//     return this.stack[this.count - 1];
+//   }
+//
+//   this.pop = function() {
+//     if(this.count === 0) {
+//       return undefined;
+//     }
+//
+//     this.count--;
+//     var store = this.stack[this.count];
+//     delete this.stack[this.count];
+//     return store;
+//   }
+//
+//   this.size = function() {
+//     return this.count;
+//   }
+//
+// }
+//
+// var myStack = new Stack();
+//
+// myStack.push(1);
+// myStack.push(2);
+// console.log(myStack.peek());
+// console.log(myStack.pop());
+// console.log(myStack.peek());
+// myStack.push("Vinicius");
+// console.log(myStack.size());
+// console.log(myStack.peek());
+// console.log(myStack.pop());
+// console.log(myStack.peek());
 
 
 

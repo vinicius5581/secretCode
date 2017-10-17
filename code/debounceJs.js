@@ -1,25 +1,19 @@
-
-
-
-var debounce = function(fn, delay) {
-    
-    return function(a, b){
-        setTimeout(fn,3000)
-    }
-   
+function Debounce(callback, delay){
+	var timer;
+	return function(){
+		window.clearTimeout(timer);
+		timer = window.setTimeout(callback, delay);
+		return timer;
+	}
 }
 
+var debouncer = new Debounce(function(){
+	console.log("hello")
+}, 3000);
 
-
-
-var debouncedFn = debounce(fetchSomething, 3000);
-
-
-debouncedFn()
-debouncedFn()
-debouncedFn()
-
-debouncedFn()
-debouncedFn()
-
-
+debouncer();
+debouncer();
+debouncer();
+debouncer();
+debouncer();
+debouncer();
