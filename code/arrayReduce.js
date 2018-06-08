@@ -14,3 +14,20 @@ const numSum = nums.reduce((x,y) => x + y, 0);
 const strings = ['John', 'Mary', 'Sebastian', 'Isabel'];
 const listThings = (acc, val, i) => `${acc}\n${i}. ${val}`}
 const listString = strings.reduce(listThings, '');
+
+const arrOfArrs = [
+    ['Mike', 'Jordan', 'Frontend'],
+    ['Steve', 'Smith', 'Backend'],
+    ['Jonny', 'Mendel', 'Fullstack'],
+    ['Maxuel', 'Gibson'],
+];
+
+const flattened = arrOfArrs.reduce((acc, val) => acc.concat(val));
+
+const makeCSV = arrOfArrs.reduce((acc, val) => `${acc}\n${val[0]}, ${val[1]}`, 'FirstName, LastName');
+
+const makeCSVRow = (acc, val) => `${acc},${val}`;
+const makeCSV2 = arrOfArrs.reduce((acc1, val1) => {
+    const row = val1.slice(1).reduce(makeCSVRow, val1.slice(0,1));
+    return `${acc1}\n${row}`;
+}, 'firstName, lastName, Position');
