@@ -37,5 +37,10 @@ const add1 = num => num + 1;
 const doubleIt = num => num * 2;
 const tripleIt = num => num * 3;
 const arrOfFuncs = [add1, doubleIt, tripleIt];
+
 const apply = (acc, val) => val(acc);
 const result = [add1, doubleIt, tripleIt].reduce(apply,2);
+
+const commpose = arr => val => arr.reduce(apply, val);
+const add1DoubleTriple = compose(arrOffFuncs);
+const result2 = add1DoubleTriple(2);
