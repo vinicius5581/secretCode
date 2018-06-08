@@ -42,5 +42,5 @@ const apply = (acc, val) => val(acc);
 const result = [add1, doubleIt, tripleIt].reduce(apply,2);
 
 const compose = arr => val => arr.reduce(apply, val);
-const add1DoubleTriple = compose(arrOffFuncs);
+const add1DoubleTriple = compose(arrOfFuncs);
 const result2 = add1DoubleTriple(2);
