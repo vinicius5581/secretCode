@@ -1,7 +1,5 @@
 const nums = [1,2,3,4,5,6,7,8,9,10];
-
 const incrementedNums = nums.map((x) => x + 1);
-
 const numSum = nums.reduce((x,y) => x + y, 0);
 
 // how it works
@@ -11,3 +9,8 @@ const numSum = nums.reduce((x,y) => x + y, 0);
 // 1 + 2 = 3
 // third call -> x = accumulator (3); y = nums[2] (3)
 // 3 + 3 = 6
+
+
+const strings = ['John', 'Mary', 'Sebastian', 'Isabel'];
+const listThings = (acc, val, i) => `${acc}\n${i}. ${val}`}
+const listString = strings.reduce(listThings, '');
