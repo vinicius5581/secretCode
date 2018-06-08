@@ -11,7 +11,7 @@ const words =  ['I', 'know', 'recursion'];
 const joinWithSpace = (x,y) => `${x} ${y}`;
 const join = ([x, y,  ...ys]) => x === undefined ? ''
     : y === undefined ? x
-    : ys.length === 0 ? joinWithSpace(x,y)
+    : ys.length === 0 ? `${joinWithSpace(x,y)}!`
     : joinWithSpace(x, join([y, ...ys]));
 
 
