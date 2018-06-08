@@ -12,7 +12,7 @@ const numSum = nums.reduce((x,y) => x + y, 0);
 
 
 const strings = ['John', 'Mary', 'Sebastian', 'Isabel'];
-const listThings = (acc, val, i) => `${acc}\n${i}. ${val}`}
+const listThings = (acc, val, i) => `${acc}\n${i}. ${val}`;
 const listString = strings.reduce(listThings, '');
 
 const arrOfArrs = [
